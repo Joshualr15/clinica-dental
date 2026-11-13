@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DentiArt Clinic | Odontología Avanzada, Estética & Cero Dolor</title>
+  
+  <!-- Meta SEO -->
+  <meta name="description" content="DentiArt Clinic: Centro odontológico integral de alta especialidad. Diseño digital de sonrisa, ortodoncia invisible, implantes guiados en 3D y blanqueamiento láser sin dolor.">
+  <meta name="keywords" content="clinica dental, dentista, ortodoncia invisible, implantes dentales, blanqueamiento dental, diseño de sonrisa, carillas dentales">
+  <meta name="author" content="DentiArt Clinic">
+  <meta name="theme-color" content="#0891b2">
+
+  <!-- Open Graph / WhatsApp Preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DentiArt Clinic | Especialistas en Estética y Salud Dental">
+  <meta property="og:description" content="Tecnología 3D, odontología sin dolor y la sonrisa perfecta que siempre soñaste. ¡Agenda tu valoración gratuita!">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              50: '#ecfeff',
+              100: '#cffafe',
+              200: '#a5f3fc',
+              300: '#67e8f9',
+              400: '#22d3ee',
+              500: '#06b6d4',
+              600: '#0891b2',
+              700: '#0e7490',
+              800: '#155e75',
+              900: '#164e63',
+            },
+            dental: {
+              mint: '#10b981',
+              dark: '#0b1120',
+              card: '#131d33',
+              glow: '#38bdf8',
+            }
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            heading: ['Outfit', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-slate-50 text-slate-800 dark:bg-[#0b1120] dark:text-slate-100 antialiased overflow-x-hidden selection:bg-cyan-500 selection:text-white transition-colors duration-300">
+
+  <!-- Top Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Announcement & Emergency Bar -->
+  <div class="bg-gradient-to-r from-cyan-900 via-primary-800 to-cyan-900 text-white text-xs sm:text-sm py-2 px-4 shadow-sm relative z-50">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-4">
+        <span class="inline-flex items-center gap-1.5 font-medium">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+          <span>Clínica Abierta Hoy | Consultas de Urgencia 24/7</span>
+        </span>
+        <span class="hidden md:inline text-cyan-200">|</span>
+        <span class="hidden md:flex items-center gap-1 text-cyan-100">
+          <i class="fa-solid fa-location-dot text-cyan-300 text-xs"></i>
+          Av. Médica Principal #450, Piso 3
+        </span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="tel:+525512345678" class="hover:text-cyan-200 transition-colors flex items-center gap-1.5 font-semibold">
+          <i class="fa-solid fa-phone-volume text-cyan-300"></i>
+          <span>(55) 1234-5678</span>
+        </a>
+        <a href="https://wa.me/5215512345678?text=Hola%2C%20quisiera%20información%20sobre%20una%20cita%20dental" target="_blank" rel="noopener" class="bg-emerald-500 hover:bg-emerald-600 text-white font-medium px-2.5 py-0.5 rounded-full text-xs flex items-center gap-1 transition-all shadow-sm">
+          <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp Express
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation Bar -->
+  <nav id="navbar" class="glass-nav sticky top-0 w-full z-40 transition-all duration-300 border-b border-slate-200/60 dark:border-slate-800/80 py-4">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="#hero" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-cyan-600 via-primary-500 to-emerald-400 flex items-center justify-center text-white shadow-md shadow-cyan-500/20 group-hover:scale-105 transition-transform duration-300">
+          <i class="fa-solid fa-tooth text-2xl group-hover:rotate-12 transition-transform duration-300"></i>
+        </div>
+        <div>
+          <span class="text-xl font-bold font-heading tracking-tight flex items-center gap-1">
+            Denti<span class="text-cyan-600 dark:text-cyan-400">Art</span>
+            <span class="text-xs uppercase tracking-widest px-1.5 py-0.5 rounded bg-cyan-100 text-cyan-800 dark:bg-cyan-950 dark:text-cyan-300 font-semibold ml-1">Clinic</span>
+          </span>
+          <p class="text-[10px] uppercase tracking-wider text-slate-500 dark:text-slate-400 font-medium">Odontología de Vanguardia</p>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <div class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-600 dark:text-slate-300">
+        <a href="#hero" class="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">Inicio</a>
+        <a href="#servicios" class="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">Servicios</a>
+        <a href="#transformaciones" class="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">Antes & Después</a>
+        <a href="#test-sonrisa" class="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors flex items-center gap-1">
+          <span>Test Sonrisa</span>
+          <span class="bg-gradient-to-r from-pink-500 to-rose-500 text-white text-[10px] font-bold px-1.5 py-0.2 rounded-full uppercase">Nuevo</span>
+        </a>
+        <a href="#especialistas" class="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">Especialistas</a>
+        <a href="#testimonios" class="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">Opiniones</a>
+        <a href="#faq" class="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">Preguntas</a>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-3">
+        
+        <!-- Dark Mode Toggle -->
+        <button id="theme-toggle" aria-label="Cambiar tema de color" class="w-10 h-10 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 flex items-center justify-center transition-all duration-300">
+          <i class="theme-icon fa-solid fa-moon text-base"></i>
+        </button>
+
+        <!-- Agendar Cita Button -->
+        <button class="open-booking-btn hidden sm:inline-flex items-center gap-2 bg-gradient-to-r from-cyan-600 to-primary-500 hover:from-cyan-700 hover:to-primary-600 text-white font-semibold text-sm px-5 py-2.5 rounded-xl shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5 transition-all duration-300">
+          <i class="fa-regular fa-calendar-check text-base"></i>
+          <span>Agendar Cita</span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-btn" aria-label="Abrir menú" class="lg:hidden w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 flex items-center justify-center focus:outline-none">
+          <i class="fa-solid fa-bars-staggered text-lg"></i>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-backdrop" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden opacity-0 transition-opacity duration-300"></div>
+  <div id="mobile-drawer" class="fixed top-0 right-0 h-full w-[85%] max-w-sm bg-white dark:bg-[#0f172a] shadow-2xl z-50 transform translate-x-full transition-transform duration-300 flex flex-col justify-between p-6 overflow-y-auto">
+    <div>
+      <div class="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-4 mb-6">
+        <div class="flex items-center gap-2">
+          <div class="w-9 h-9 rounded-lg bg-cyan-600 flex items-center justify-center text-white font-bold">
+            <i class="fa-solid fa-tooth"></i>
+          </div>
+          <span class="font-heading font-bold text-lg text-slate-900 dark:text-white">Denti<span class="text-cyan-600">Art</span></span>
+        </div>
+        <button id="close-mobile-menu" aria-label="Cerrar menú" class="w-9 h-9 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-500 hover:text-slate-900 dark:hover:text-white flex items-center justify-center">
+          <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+      </div>
+
+      <div class="flex flex-col gap-3 font-semibold text-slate-700 dark:text-slate-200 text-base">
+        <a href="#hero" class="mobile-nav-link py-2.5 px-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center gap-3">
+          <i class="fa-solid fa-house text-cyan-600 w-5"></i> Inicio
+        </a>
+        <a href="#servicios" class="mobile-nav-link py-2.5 px-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center gap-3">
+          <i class="fa-solid fa-teeth text-cyan-600 w-5"></i> Especialidades
+        </a>
+        <a href="#transformaciones" class="mobile-nav-link py-2.5 px-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center gap-3">
+          <i class="fa-solid fa-wand-magic-sparkles text-cyan-600 w-5"></i> Antes & Después
+        </a>
+        <a href="#test-sonrisa" class="mobile-nav-link py-2.5 px-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center gap-3">
+          <i class="fa-solid fa-clipboard-question text-cyan-600 w-5"></i> Test de Sonrisa
+        </a>
+        <a href="#especialistas" class="mobile-nav-link py-2.5 px-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center gap-3">
+          <i class="fa-solid fa-user-doctor text-cyan-600 w-5"></i> Especialistas
+        </a>
+        <a href="#testimonios" class="mobile-nav-link py-2.5 px-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center gap-3">
+          <i class="fa-solid fa-star text-cyan-600 w-5"></i> Opiniones de Pacientes
+        </a>
+        <a href="#faq" class="mobile-nav-link py-2.5 px-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center gap-3">
+          <i class="fa-solid fa-circle-question text-cyan-600 w-5"></i> Preguntas Frecuentes
+        </a>
+        <a href="#contacto" class="mobile-nav-link py-2.5 px-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center gap-3">
+          <i class="fa-solid fa-map-location-dot text-cyan-600 w-5"></i> Ubicación & Contacto
+        </a>
+      </div>
+    </div>
+
+    <div class="pt-6 border-t border-slate-100 dark:border-slate-800 space-y-3">
+      <button class="open-booking-btn w-full py-3 bg-gradient-to-r from-cyan-600 to-primary-500 text-white font-bold rounded-xl shadow-lg shadow-cyan-500/25 flex items-center justify-center gap-2">
+        <i class="fa-regular fa-calendar-check"></i> Agendar Cita de Valoración
+      </button>
+      <div class="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 px-1 pt-2">
+        <span>Urgencias 24 Horas</span>
+        <a href="tel:+525512345678" class="text-cyan-600 dark:text-cyan-400 font-bold">(55) 1234-5678</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden">
+    <!-- Ambient Light Blobs -->
+    <div class="blob blob-cyan w-96 h-96 -top-20 -left-20"></div>
+    <div class="blob blob-teal w-96 h-96 top-1/2 -right-20"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Left Content Column -->
+        <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+          
+          <!-- Pill Badge -->
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-100/80 dark:bg-cyan-950/80 border border-cyan-300 dark:border-cyan-800 text-cyan-800 dark:text-cyan-300 text-xs sm:text-sm font-semibold shadow-sm backdrop-blur-sm">
+            <span class="flex h-2 w-2 rounded-full bg-emerald-500"></span>
+            <span>Tecnología 3D & Odontología Sin Dolor Garantizada</span>
+          </div>
+
+          <!-- Main Catchy Title -->
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-[1.15]">
+            La sonrisa que siempre soñaste, <br class="hidden sm:inline">
+            <span class="gradient-text">creada con precisión digital</span>
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="text-lg sm:text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+            Especialistas en <strong>diseño de sonrisa</strong>, <strong>ortodoncia invisible</strong> e <strong>implantes computarizados</strong>. Disfruta de un tratamiento relajante con tecnología mínimamente invasiva.
+          </p>
+
+          <!-- Action Buttons Group -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+            <button class="open-booking-btn w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-cyan-600 via-primary-500 to-emerald-500 hover:from-cyan-700 hover:to-emerald-600 text-white font-bold rounded-2xl shadow-xl shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-3 text-base">
+              <i class="fa-solid fa-calendar-plus text-lg"></i>
+              <span>Agendar Valoración Gratuita</span>
+            </button>
+            <a href="#transformaciones" class="w-full sm:w-auto px-7 py-4 glass-card hover:bg-white dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 font-semibold rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-cyan-400 transition-all duration-300 flex items-center justify-center gap-2 text-base">
+              <i class="fa-solid fa-wand-magic-sparkles text-cyan-600 dark:text-cyan-400"></i>
+              <span>Ver Antes & Después</span>
+            </a>
+          </div>
+
+          <!-- Trust Badges & Social Proof -->
+          <div class="pt-6 border-t border-slate-200/80 dark:border-slate-800 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0">
+            <div class="text-left">
+              <div class="flex items-center text-amber-400 text-sm mb-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-xs font-bold text-slate-800 dark:text-slate-200">4.9 / 5 Estrellas</p>
+              <p class="text-[11px] text-slate-500 dark:text-slate-400">+2,400 Reseñas Google</p>
+            </div>
+            <div class="text-left border-l border-slate-200 dark:border-slate-800 pl-4">
+              <p class="text-base font-bold text-cyan-600 dark:text-cyan-400 flex items-center gap-1">
+                <i class="fa-solid fa-shield-halved text-sm"></i> 100%
+              </p>
+              <p class="text-xs font-bold text-slate-800 dark:text-slate-200">Garantía Escrita</p>
+              <p class="text-[11px] text-slate-500 dark:text-slate-400">Materiales Biomédicos</p>
+            </div>
+            <div class="text-left border-l border-slate-200 dark:border-slate-800 pl-4">
+              <p class="text-base font-bold text-emerald-600 dark:text-emerald-400 flex items-center gap-1">
+                <i class="fa-solid fa-feather text-sm"></i> Cero
+              </p>
+              <p class="text-xs font-bold text-slate-800 dark:text-slate-200">Dolor / Miedo</p>
+              <p class="text-[11px] text-slate-500 dark:text-slate-400">Anestesia Computarizada</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Visual Showcase Column -->
+        <div class="lg:col-span-5 relative">
+          
+          <!-- Main Hero Image Frame -->
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl shadow-cyan-900/10 border-4 border-white dark:border-slate-800">
+              <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1000&q=80" alt="Doctora odontóloga atendiendo a paciente con tecnología moderna en clínica dental DentiArt" class="w-full h-[460px] object-cover object-center">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent"></div>
+              
+              <!-- Bottom caption overlay -->
+              <div class="absolute bottom-5 left-5 right-5 text-white">
+                <div class="inline-flex items-center gap-2 bg-emerald-500/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-2">
+                  <i class="fa-solid fa-check"></i> Escáner 3D Activo
+                </div>
+                <h4 class="font-bold text-lg leading-tight">Simulación Digital Inmediata</h4>
+                <p class="text-xs text-slate-200">Visualiza tu sonrisa antes de comenzar el tratamiento.</p>
+              </div>
+            </div>
+
+            <!-- Floating Micro Card 1: Experience & Rating -->
+            <div class="absolute -top-6 -left-6 bg-white dark:bg-slate-800 p-4 rounded-2xl shadow-xl border border-slate-100 dark:border-slate-700 flex items-center gap-3 animate-float">
+              <div class="w-12 h-12 rounded-xl bg-cyan-100 dark:bg-cyan-950 text-cyan-600 dark:text-cyan-400 flex items-center justify-center text-xl">
+                <i class="fa-solid fa-certificate"></i>
+              </div>
+              <div>
+                <span class="text-xs font-bold uppercase text-slate-400 tracking-wider">Certificación</span>
+                <p class="text-sm font-bold text-slate-800 dark:text-white">Invisalign Platinum</p>
+                <p class="text-[11px] text-emerald-600 dark:text-emerald-400 font-semibold flex items-center gap-1">
+                  <i class="fa-solid fa-circle-check"></i> Odontología Digital
+                </p>
+              </div>
+            </div>
+
+            <!-- Floating Micro Card 2: Treatment result quick preview -->
+            <div class="absolute -bottom-6 -right-4 sm:-right-6 bg-white dark:bg-slate-800 p-4 rounded-2xl shadow-xl border border-slate-100 dark:border-slate-700 flex items-center gap-3 animate-float-slow">
+              <div class="w-12 h-12 rounded-xl bg-emerald-100 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-xl">
+                <i class="fa-solid fa-bolt"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold uppercase text-slate-400 tracking-wider">Blanqueamiento Express</p>
+                <p class="text-sm font-bold text-slate-800 dark:text-white">6 Tonos más Blanco</p>
+                <p class="text-[11px] text-cyan-600 dark:text-cyan-400 font-semibold">En solo 45 minutos</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS & COUNTERS SECTION -->
+  <section id="stats-section" class="py-12 bg-white dark:bg-slate-900 border-y border-slate-200 dark:border-slate-800 transition-colors">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        
+        <div class="space-y-1">
+          <p class="text-3xl sm:text-5xl font-extrabold text-cyan-600 dark:text-cyan-400 counter-val" data-target="12" data-prefix="+" data-suffix="">12</p>
+          <p class="text-sm font-bold text-slate-800 dark:text-slate-100">Años de Trayectoria</p>
+          <p class="text-xs text-slate-500 dark:text-slate-400">Innovación continua</p>
+        </div>
+
+        <div class="space-y-1">
+          <p class="text-3xl sm:text-5xl font-extrabold text-cyan-600 dark:text-cyan-400 counter-val" data-target="3500" data-prefix="+" data-suffix="">3,500</p>
+          <p class="text-sm font-bold text-slate-800 dark:text-slate-100">Sonrisas Diseñadas</p>
+          <p class="text-xs text-slate-500 dark:text-slate-400">Pacientes satisfechos</p>
+        </div>
+
+        <div class="space-y-1">
+          <p class="text-3xl sm:text-5xl font-extrabold text-emerald-500 counter-val" data-target="99.8" data-prefix="" data-suffix="%">99.8%</p>
+          <p class="text-sm font-bold text-slate-800 dark:text-slate-100">Éxito en Procedimientos</p>
+          <p class="text-xs text-slate-500 dark:text-slate-400">Protocolos médicos seguros</p>
+        </div>
+
+        <div class="space-y-1">
+          <p class="text-3xl sm:text-5xl font-extrabold text-cyan-600 dark:text-cyan-400 counter-val" data-target="6" data-prefix="" data-suffix=" Esp.">6</p>
+          <p class="text-sm font-bold text-slate-800 dark:text-slate-100">Especialistas Dentales</p>
+          <p class="text-xs text-slate-500 dark:text-slate-400">Postgrado & Certificación</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE BEFORE & AFTER SLIDER SECTION -->
+  <section id="transformaciones" class="py-20 md:py-28 relative overflow-hidden bg-slate-50 dark:bg-[#0b1120]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="inline-block px-3 py-1 rounded-full bg-cyan-100 text-cyan-800 dark:bg-cyan-950 dark:text-cyan-300 text-xs font-bold uppercase tracking-wider mb-3">
+          Resultados Reales Comprobados
+        </span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+          Desliza y descubre la <span class="gradient-text">transformación de sonrisas</span>
+        </h2>
+        <p class="mt-4 text-slate-600 dark:text-slate-300 text-base sm:text-lg">
+          Arrastra el control interactivo de izquierda a derecha para comparar el estado inicial con el resultado final de nuestros pacientes.
+        </p>
+      </div>
+
+      <!-- Case Selection Tabs -->
+      <div class="flex flex-wrap items-center justify-center gap-3 mb-10">
+        <button class="case-tab-btn px-5 py-2.5 rounded-xl font-bold text-sm bg-cyan-600 text-white shadow-md transition-all duration-300" data-case="blanqueamiento">
+          <i class="fa-solid fa-wand-magic-sparkles mr-1.5"></i> Blanqueamiento Láser
+        </button>
+        <button class="case-tab-btn px-5 py-2.5 rounded-xl font-bold text-sm bg-white text-slate-700 dark:bg-slate-800 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 transition-all duration-300" data-case="carillas">
+          <i class="fa-solid fa-tooth mr-1.5"></i> Carillas de Porcelana (DSD)
+        </button>
+        <button class="case-tab-btn px-5 py-2.5 rounded-xl font-bold text-sm bg-white text-slate-700 dark:bg-slate-800 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 transition-all duration-300" data-case="ortodoncia">
+          <i class="fa-solid fa-gem mr-1.5"></i> Ortodoncia Invisible 3D
+        </button>
+      </div>
+
+      <!-- Before/After Slider Component -->
+      <div class="max-w-4xl mx-auto">
+        <div class="glass-card p-4 sm:p-6 rounded-3xl shadow-2xl">
+          
+          <div id="ba-slider" class="ba-container relative w-full h-[360px] sm:h-[480px] rounded-2xl overflow-hidden cursor-ew-resize">
+            
+            <!-- Before Image (Underneath) -->
+            <img id="ba-img-before" src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=900&q=80" alt="Antes del tratamiento dental" class="ba-image">
+            <span class="absolute bottom-4 right-4 bg-slate-900/80 backdrop-blur-md text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg z-10 pointer-events-none">
+              Antes
+            </span>
+
+            <!-- After Image (Clipped on top) -->
+            <div class="ba-after-wrapper">
+              <img id="ba-img-after" src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db?auto=format&fit=crop&w=900&q=80" alt="Después del tratamiento dental terminado" class="ba-image">
+              <span class="absolute bottom-4 left-4 bg-cyan-600/90 backdrop-blur-md text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg z-10 pointer-events-none">
+                Después (Resultado Final)
+              </span>
+            </div>
+
+            <!-- Draggable Divider Line & Button -->
+            <div class="ba-slider-handle">
+              <div class="ba-slider-button">
+                <i class="fa-solid fa-arrows-left-right"></i>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Active Case Details Bar -->
+          <div class="mt-6 flex flex-col md:flex-row md:items-center justify-between gap-4 pt-4 border-t border-slate-200 dark:border-slate-800">
+            <div>
+              <h3 id="ba-case-title" class="font-bold text-lg sm:text-xl text-slate-900 dark:text-white">Blanqueamiento Láser Express</h3>
+              <p id="ba-case-subtitle" class="text-sm text-slate-600 dark:text-slate-400">6 tonos más blancos en 45 minutos sin dolor ni sensibilidad.</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="text-right">
+                <p id="ba-case-patient" class="text-xs font-bold text-slate-800 dark:text-slate-200">Mariana R. - 28 años</p>
+                <p id="ba-case-duration" class="text-xs text-cyan-600 dark:text-cyan-400 font-semibold">1 Sesión (45 min)</p>
+              </div>
+              <button class="open-booking-btn px-4 py-2 bg-cyan-600 hover:bg-cyan-700 text-white font-bold text-xs rounded-xl shadow-md transition-colors flex items-center gap-1.5 whitespace-nowrap">
+                <i class="fa-regular fa-calendar-check"></i> Quiero este resultado
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SERVICES / ESPECIALIDADES SECTION -->
+  <section id="servicios" class="py-20 md:py-28 bg-white dark:bg-slate-900 transition-colors">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="inline-block px-3 py-1 rounded-full bg-cyan-100 text-cyan-800 dark:bg-cyan-950 dark:text-cyan-300 text-xs font-bold uppercase tracking-wider mb-3">
+          Especialidades Médicas
+        </span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+          Tratamientos integrales de <span class="gradient-text">máxima precisión</span>
+        </h2>
+        <p class="mt-4 text-slate-600 dark:text-slate-300 text-base sm:text-lg">
+          Equipos digitales de última generación y materiales certificados para una experiencia confortable y resultados para toda la vida.
+        </p>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Service 1: DSD -->
+        <div class="service-card bg-slate-50 dark:bg-slate-800/70 rounded-3xl p-8 border border-slate-200/80 dark:border-slate-700/80 hover:border-cyan-500 dark:hover:border-cyan-500 flex flex-col justify-between group">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-cyan-600 group-hover:text-white transition-all duration-300">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-cyan-100 text-cyan-800 dark:bg-cyan-950 dark:text-cyan-300">Estética Premium</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Diseño Digital de Sonrisa (DSD)</h3>
+            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-6">
+              Carillas de porcelana ultrafinas E-Max diseñadas en software 3D según tus rasgos faciales. Visualiza el resultado antes de empezar.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-200 dark:border-slate-700 flex items-center justify-between">
+            <button class="open-service-details text-cyan-600 dark:text-cyan-400 text-xs font-bold hover:underline flex items-center gap-1" data-service-key="dsd">
+              Ver detalles clínicos <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </button>
+            <button class="open-booking-btn text-xs font-bold bg-cyan-600/10 hover:bg-cyan-600 hover:text-white text-cyan-700 dark:text-cyan-300 px-3 py-1.5 rounded-lg transition-colors" data-service="Diseño de Sonrisa DSD">
+              Agendar
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 2: Ortodoncia Invisible -->
+        <div class="service-card bg-slate-50 dark:bg-slate-800/70 rounded-3xl p-8 border border-slate-200/80 dark:border-slate-700/80 hover:border-cyan-500 dark:hover:border-cyan-500 flex flex-col justify-between group">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-cyan-600 group-hover:text-white transition-all duration-300">
+              <i class="fa-solid fa-teeth-open"></i>
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300">Alineación 3D</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Ortodoncia Invisible</h3>
+            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-6">
+              Alineadores transparentes y removibles. Corrige mordida y dientes apiñados sin brackets metálicos ni molestias al comer.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-200 dark:border-slate-700 flex items-center justify-between">
+            <button class="open-service-details text-cyan-600 dark:text-cyan-400 text-xs font-bold hover:underline flex items-center gap-1" data-service-key="ortodoncia">
+              Ver detalles clínicos <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </button>
+            <button class="open-booking-btn text-xs font-bold bg-cyan-600/10 hover:bg-cyan-600 hover:text-white text-cyan-700 dark:text-cyan-300 px-3 py-1.5 rounded-lg transition-colors" data-service="Ortodoncia Invisible">
+              Agendar
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 3: Implantes Guiados -->
+        <div class="service-card bg-slate-50 dark:bg-slate-800/70 rounded-3xl p-8 border border-slate-200/80 dark:border-slate-700/80 hover:border-cyan-500 dark:hover:border-cyan-500 flex flex-col justify-between group">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-cyan-600 group-hover:text-white transition-all duration-300">
+              <i class="fa-solid fa-tooth"></i>
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-cyan-100 text-cyan-800 dark:bg-cyan-950 dark:text-cyan-300">Garantía de Por Vida</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Implantes Guiados por Tomografía</h3>
+            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-6">
+              Reemplazo fijo de piezas con titanio biocompatible y corona de circonio. Cirugía mínimamente invasiva con recuperación rápida.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-200 dark:border-slate-700 flex items-center justify-between">
+            <button class="open-service-details text-cyan-600 dark:text-cyan-400 text-xs font-bold hover:underline flex items-center gap-1" data-service-key="implantes">
+              Ver detalles clínicos <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </button>
+            <button class="open-booking-btn text-xs font-bold bg-cyan-600/10 hover:bg-cyan-600 hover:text-white text-cyan-700 dark:text-cyan-300 px-3 py-1.5 rounded-lg transition-colors" data-service="Implantes Dentales">
+              Agendar
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 4: Blanqueamiento Láser -->
+        <div class="service-card bg-slate-50 dark:bg-slate-800/70 rounded-3xl p-8 border border-slate-200/80 dark:border-slate-700/80 hover:border-cyan-500 dark:hover:border-cyan-500 flex flex-col justify-between group">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-cyan-600 group-hover:text-white transition-all duration-300">
+              <i class="fa-solid fa-sun"></i>
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300">1 Sola Sesión</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Blanqueamiento Láser Express</h3>
+            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-6">
+              Tecnología de fotoactivación que elimina manchas de café, té y tabaco sin desgastar el esmalte ni generar sensibilidad dolorosa.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-200 dark:border-slate-700 flex items-center justify-between">
+            <button class="open-service-details text-cyan-600 dark:text-cyan-400 text-xs font-bold hover:underline flex items-center gap-1" data-service-key="blanqueamiento">
+              Ver detalles clínicos <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </button>
+            <button class="open-booking-btn text-xs font-bold bg-cyan-600/10 hover:bg-cyan-600 hover:text-white text-cyan-700 dark:text-cyan-300 px-3 py-1.5 rounded-lg transition-colors" data-service="Blanqueamiento Láser">
+              Agendar
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 5: Endodoncia Microscópica -->
+        <div class="service-card bg-slate-50 dark:bg-slate-800/70 rounded-3xl p-8 border border-slate-200/80 dark:border-slate-700/80 hover:border-cyan-500 dark:hover:border-cyan-500 flex flex-col justify-between group">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-cyan-600 group-hover:text-white transition-all duration-300">
+              <i class="fa-solid fa-microscope"></i>
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-cyan-100 text-cyan-800 dark:bg-cyan-950 dark:text-cyan-300">Cero Dolor</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Endodoncia Microscópica</h3>
+            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-6">
+              Salva tus dientes naturales con magnificación microscópica quirúrgica y anestesia digital indolora para eliminar infecciones.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-200 dark:border-slate-700 flex items-center justify-between">
+            <button class="open-service-details text-cyan-600 dark:text-cyan-400 text-xs font-bold hover:underline flex items-center gap-1" data-service-key="endodoncia">
+              Ver detalles clínicos <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </button>
+            <button class="open-booking-btn text-xs font-bold bg-cyan-600/10 hover:bg-cyan-600 hover:text-white text-cyan-700 dark:text-cyan-300 px-3 py-1.5 rounded-lg transition-colors" data-service="Endodoncia">
+              Agendar
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 6: Odontopediatría -->
+        <div class="service-card bg-slate-50 dark:bg-slate-800/70 rounded-3xl p-8 border border-slate-200/80 dark:border-slate-700/80 hover:border-cyan-500 dark:hover:border-cyan-500 flex flex-col justify-between group">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-cyan-600 group-hover:text-white transition-all duration-300">
+              <i class="fa-solid fa-child-reaching"></i>
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-rose-100 text-rose-800 dark:bg-rose-950 dark:text-rose-300">Para Niños</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Odontopediatría Amigable</h3>
+            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-6">
+              Atención lúdica, libre de miedo y con técnicas psicológicas positivas para cuidar las primeras sonrisas y prevenir caries.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-200 dark:border-slate-700 flex items-center justify-between">
+            <button class="open-service-details text-cyan-600 dark:text-cyan-400 text-xs font-bold hover:underline flex items-center gap-1" data-service-key="infantil">
+              Ver detalles clínicos <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </button>
+            <button class="open-booking-btn text-xs font-bold bg-cyan-600/10 hover:bg-cyan-600 hover:text-white text-cyan-700 dark:text-cyan-300 px-3 py-1.5 rounded-lg transition-colors" data-service="Odontopediatría">
+              Agendar
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INTERACTIVE DIAGNOSTIC SMILE QUIZ SECTION -->
+  <section id="test-sonrisa" class="py-20 md:py-28 relative overflow-hidden bg-gradient-to-b from-slate-50 via-cyan-50/50 to-slate-50 dark:from-[#0b1120] dark:via-cyan-950/20 dark:to-[#0b1120]">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="text-center mb-10">
+        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-100 text-pink-700 dark:bg-pink-950 dark:text-pink-300 text-xs font-bold uppercase tracking-wider mb-3">
+          <i class="fa-solid fa-sparkles"></i> Test Interactivo Rápido (1 Minuto)
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">
+          ¿No sabes qué tratamiento necesitas? <br>
+          <span class="gradient-text">Descúbrelo con nuestro test virtual</span>
+        </h2>
+        <p class="mt-3 text-slate-600 dark:text-slate-300 text-sm sm:text-base">
+          Responde 3 preguntas sencillas y obtén un pre-diagnóstico sugerido y un cupón de 20% en tu primera valoración.
+        </p>
+      </div>
+
+      <!-- Quiz Interactive Card Container -->
+      <div class="glass-card bg-white/80 dark:bg-slate-900/80 rounded-3xl p-6 sm:p-10 shadow-2xl border border-slate-200 dark:border-slate-800">
+        
+        <form id="smile-quiz-form" onsubmit="return false;">
+          
+          <!-- Step 1: Objetivo Principal -->
+          <div id="quiz-step-1" class="space-y-6">
+            <div class="flex items-center justify-between text-xs font-bold text-cyan-600 dark:text-cyan-400 uppercase tracking-wider mb-2">
+              <span>Paso 1 de 3</span>
+              <span>Objetivo de Sonrisa</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white">¿Cuál es tu principal deseo para tu boca o sonrisa?</h3>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              <button type="button" class="quiz-opt text-left p-5 rounded-2xl border-2 border-slate-200 dark:border-slate-700 hover:border-cyan-500 dark:hover:border-cyan-400 transition-all flex items-start gap-4" data-step="1" data-field="objective" data-value="estetica">
+                <div class="w-10 h-10 rounded-xl bg-cyan-100 dark:bg-cyan-900/60 text-cyan-600 dark:text-cyan-400 flex items-center justify-center text-lg flex-shrink-0">
+                  <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-slate-900 dark:text-white text-base">Mejorar estética & color</h4>
+                  <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Quiero dientes más blancos, corregir forma o diseño de carillas.</p>
+                </div>
+              </button>
+
+              <button type="button" class="quiz-opt text-left p-5 rounded-2xl border-2 border-slate-200 dark:border-slate-700 hover:border-cyan-500 dark:hover:border-cyan-400 transition-all flex items-start gap-4" data-step="1" data-field="objective" data-value="alinear">
+                <div class="w-10 h-10 rounded-xl bg-cyan-100 dark:bg-cyan-900/60 text-cyan-600 dark:text-cyan-400 flex items-center justify-center text-lg flex-shrink-0">
+                  <i class="fa-solid fa-teeth"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-slate-900 dark:text-white text-base">Alinear dientes chuecos</h4>
+                  <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Cerrar espacios o corregir mordida sin alambres metálicos.</p>
+                </div>
+              </button>
+
+              <button type="button" class="quiz-opt text-left p-5 rounded-2xl border-2 border-slate-200 dark:border-slate-700 hover:border-cyan-500 dark:hover:border-cyan-400 transition-all flex items-start gap-4" data-step="1" data-field="objective" data-value="reemplazar">
+                <div class="w-10 h-10 rounded-xl bg-cyan-100 dark:bg-cyan-900/60 text-cyan-600 dark:text-cyan-400 flex items-center justify-center text-lg flex-shrink-0">
+                  <i class="fa-solid fa-tooth"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-slate-900 dark:text-white text-base">Recuperar dientes perdidos</h4>
+                  <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Me falta una o más piezas y deseo implantes fijos y naturales.</p>
+                </div>
+              </button>
+
+              <button type="button" class="quiz-opt text-left p-5 rounded-2xl border-2 border-slate-200 dark:border-slate-700 hover:border-cyan-500 dark:hover:border-cyan-400 transition-all flex items-start gap-4" data-step="1" data-field="objective" data-value="dolor">
+                <div class="w-10 h-10 rounded-xl bg-rose-100 dark:bg-rose-900/60 text-rose-600 dark:text-rose-400 flex items-center justify-center text-lg flex-shrink-0">
+                  <i class="fa-solid fa-triangle-exclamation"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-slate-900 dark:text-white text-base">Tengo molestia o dolor agudo</h4>
+                  <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Sensibilidad extrema, dolor de muela o urgencia dental.</p>
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 2: Urgencia / Tiempo -->
+          <div id="quiz-step-2" class="space-y-6 hidden">
+            <div class="flex items-center justify-between text-xs font-bold text-cyan-600 dark:text-cyan-400 uppercase tracking-wider mb-2">
+              <span>Paso 2 de 3</span>
+              <span>Tiempo de inicio</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white">¿Cuándo te gustaría comenzar tu procedimiento?</h3>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+              <button type="button" class="quiz-opt text-left p-5 rounded-2xl border-2 border-slate-200 dark:border-slate-700 hover:border-cyan-500 dark:hover:border-cyan-400 transition-all" data-step="2" data-field="urgency" data-value="urgente">
+                <i class="fa-solid fa-bolt text-cyan-600 text-xl mb-3 block"></i>
+                <h4 class="font-bold text-slate-900 dark:text-white text-sm">Esta misma semana</h4>
+                <p class="text-xs text-slate-500 mt-1">Deseo atención lo más pronto posible.</p>
+              </button>
+
+              <button type="button" class="quiz-opt text-left p-5 rounded-2xl border-2 border-slate-200 dark:border-slate-700 hover:border-cyan-500 dark:hover:border-cyan-400 transition-all" data-step="2" data-field="urgency" data-value="mes">
+                <i class="fa-regular fa-calendar text-cyan-600 text-xl mb-3 block"></i>
+                <h4 class="font-bold text-slate-900 dark:text-white text-sm">Próximos 15-30 días</h4>
+                <p class="text-xs text-slate-500 mt-1">Estoy planeando mi presupuesto y tiempo.</p>
+              </button>
+
+              <button type="button" class="quiz-opt text-left p-5 rounded-2xl border-2 border-slate-200 dark:border-slate-700 hover:border-cyan-500 dark:hover:border-cyan-400 transition-all" data-step="2" data-field="urgency" data-value="cotizando">
+                <i class="fa-regular fa-lightbulb text-cyan-600 text-xl mb-3 block"></i>
+                <h4 class="font-bold text-slate-900 dark:text-white text-sm">Solo consultando opciones</h4>
+                <p class="text-xs text-slate-500 mt-1">Quiero conocer costos y alternativas.</p>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 3: Prioridad -->
+          <div id="quiz-step-3" class="space-y-6 hidden">
+            <div class="flex items-center justify-between text-xs font-bold text-cyan-600 dark:text-cyan-400 uppercase tracking-wider mb-2">
+              <span>Paso 3 de 3</span>
+              <span>Tu Prioridad</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white">¿Qué cualidad valoras más en tu tratamiento dental?</h3>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+              <button type="button" class="quiz-opt text-left p-5 rounded-2xl border-2 border-slate-200 dark:border-slate-700 hover:border-cyan-500 dark:hover:border-cyan-400 transition-all" data-step="3" data-field="priority" data-value="cero_dolor">
+                <i class="fa-solid fa-feather text-emerald-500 text-xl mb-3 block"></i>
+                <h4 class="font-bold text-slate-900 dark:text-white text-sm">100% Cero Dolor</h4>
+                <p class="text-xs text-slate-500 mt-1">Anestesia suave y tecnología no invasiva.</p>
+              </button>
+
+              <button type="button" class="quiz-opt text-left p-5 rounded-2xl border-2 border-slate-200 dark:border-slate-700 hover:border-cyan-500 dark:hover:border-cyan-400 transition-all" data-step="3" data-field="priority" data-value="estetica">
+                <i class="fa-solid fa-gem text-cyan-600 text-xl mb-3 block"></i>
+                <h4 class="font-bold text-slate-900 dark:text-white text-sm">Máxima Estética Natural</h4>
+                <p class="text-xs text-slate-500 mt-1">Que luzca impecable y totalmente desapercibido.</p>
+              </button>
+
+              <button type="button" class="quiz-opt text-left p-5 rounded-2xl border-2 border-slate-200 dark:border-slate-700 hover:border-cyan-500 dark:hover:border-cyan-400 transition-all" data-step="3" data-field="priority" data-value="rapidez">
+                <i class="fa-solid fa-stopwatch text-amber-500 text-xl mb-3 block"></i>
+                <h4 class="font-bold text-slate-900 dark:text-white text-sm">Rapidez & Eficiencia</h4>
+                <p class="text-xs text-slate-500 mt-1">El menor número de citas posible.</p>
+              </button>
+            </div>
+          </div>
+
+          <!-- Result Step -->
+          <div id="quiz-step-result" class="space-y-6 hidden text-center">
+            <div class="w-16 h-16 rounded-full bg-emerald-100 dark:bg-emerald-950 text-emerald-500 flex items-center justify-center text-2xl mx-auto shadow-md">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            
+            <div>
+              <span class="inline-block px-3 py-1 rounded-full bg-cyan-100 text-cyan-800 dark:bg-cyan-950 dark:text-cyan-300 text-xs font-bold uppercase tracking-wider mb-2">
+                Tratamiento Sugerido para Ti
+              </span>
+              <h3 id="quiz-result-treatment" class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">
+                Diseño Digital de Sonrisa & Carillas
+              </h3>
+              <p id="quiz-result-description" class="text-slate-600 dark:text-slate-300 text-sm sm:text-base max-w-xl mx-auto mt-2">
+                Basado en tus preferencias, este tratamiento te brindará los resultados que buscas con máxima comodidad y tecnología 3D.
+              </p>
+            </div>
+
+            <!-- Discount Voucher Box -->
+            <div class="bg-gradient-to-r from-cyan-500/10 via-emerald-500/10 to-cyan-500/10 border-2 border-dashed border-cyan-500 rounded-2xl p-4 max-w-md mx-auto">
+              <p class="text-xs font-bold uppercase text-cyan-700 dark:text-cyan-300">🎉 Cupón de Bienvenida Exclusivo</p>
+              <p class="text-lg font-extrabold text-slate-900 dark:text-white">20% de Descuento en Valoración 3D</p>
+              <p class="text-xs text-slate-500">Menciona este resultado al confirmar tu cita médica.</p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
+              <button id="quiz-claim-btn" type="button" class="w-full sm:w-auto px-7 py-3.5 bg-gradient-to-r from-cyan-600 to-emerald-500 hover:from-cyan-700 hover:to-emerald-600 text-white font-bold rounded-xl shadow-lg shadow-cyan-500/25 flex items-center justify-center gap-2">
+                <i class="fa-brands fa-whatsapp text-lg"></i> Reclamar Cupón & Agendar Cita
+              </button>
+              <button id="quiz-restart-btn" type="button" class="text-xs text-slate-500 hover:text-slate-700 dark:hover:text-slate-300 font-semibold py-2">
+                <i class="fa-solid fa-rotate-left mr-1"></i> Reiniciar Test
+              </button>
+            </div>
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TECHNOLOGY & PAINLESS PHILOSOPHY -->
+  <section class="py-20 bg-slate-900 text-white relative overflow-hidden">
+    <div class="blob blob-purple w-96 h-96 -bottom-20 -left-20"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6 space-y-6">
+          <span class="inline-block px-3 py-1 rounded-full bg-cyan-900/60 text-cyan-300 text-xs font-bold uppercase tracking-wider border border-cyan-700">
+            Filosofía DentiArt Confort
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold leading-tight">
+            Olvídate del dolor y del miedo: <br>
+            <span class="text-cyan-400">bienvenido a la odontología sin estrés</span>
+          </h2>
+          <p class="text-slate-300 text-base leading-relaxed">
+            Sabemos que ir al dentista causaba angustia en el pasado. En DentiArt transformamos completamente tu visita con un entorno relajante, pantallas con streaming en cada sillón y tecnología médica de mínima intervención.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-lg flex-shrink-0 mt-0.5">
+                <i class="fa-solid fa-syringe"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-white text-base">Anestesia Computarizada The Wand®</h4>
+                <p class="text-slate-400 text-xs leading-relaxed">Infiltración micrométrica controlada por sensor de presión. Adiós a la clásica jeringa y al dolor del pinchazo.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-lg flex-shrink-0 mt-0.5">
+                <i class="fa-solid fa-camera"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-white text-base">Escáner Intraoral iTero Element 5D</h4>
+                <p class="text-slate-400 text-xs leading-relaxed">Captura 6,000 fotos por segundo para crear tu modelo en 3D en 3 minutos. Cero pastas desagradables ni náuseas.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-lg flex-shrink-0 mt-0.5">
+                <i class="fa-solid fa-shield-virus"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-white text-base">Esterilización Hospitalaria Clase B</h4>
+                <p class="text-slate-400 text-xs leading-relaxed">Protocolo de bioseguridad europeo con autoclaves de vacío fraccionado para tu absoluta tranquilidad.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6">
+          <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-700">
+            <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=1000&q=80" alt="Instalaciones de consultorio dental moderno con pantalla y sillón ergonómico" class="w-full h-[460px] object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-8">
+              <div class="glass-card bg-slate-900/80 p-5 rounded-2xl w-full border border-slate-700">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <p class="text-xs uppercase tracking-wider text-cyan-400 font-bold">Instalaciones Diseñadas para tu Calma</p>
+                    <p class="text-white font-bold text-base">Salas privadas con aromaterapia y música envolvente</p>
+                  </div>
+                  <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center">
+                    <i class="fa-solid fa-spa"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SPECIALISTS TEAM SECTION -->
+  <section id="especialistas" class="py-20 md:py-28 bg-white dark:bg-slate-900 transition-colors">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="inline-block px-3 py-1 rounded-full bg-cyan-100 text-cyan-800 dark:bg-cyan-950 dark:text-cyan-300 text-xs font-bold uppercase tracking-wider mb-3">
+          Cuerpo Médico
+        </span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+          Especialistas con <span class="gradient-text">reconocimiento internacional</span>
+        </h2>
+        <p class="mt-4 text-slate-600 dark:text-slate-300 text-base sm:text-lg">
+          Doctores dedicados en exclusiva a su área de especialidad para darte diagnósticos certeros y el tratamiento más indicado.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Specialist 1 -->
+        <div class="group bg-slate-50 dark:bg-slate-800 rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-all duration-300">
+          <div class="relative h-80 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=80" alt="Dra. Sofía Valenzuela, Directora Médica y Especialista en Estética Dental" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+            <div class="absolute bottom-4 left-4 right-4 text-white">
+              <span class="text-[11px] font-bold bg-cyan-600 px-2.5 py-0.5 rounded-full uppercase tracking-wider">Directora Médica</span>
+              <h3 class="font-bold text-xl mt-1">Dra. Sofía Valenzuela</h3>
+              <p class="text-xs text-slate-300">Especialista en Rehabilitación Oral & DSD</p>
+            </div>
+          </div>
+          <div class="p-6 space-y-4">
+            <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+              Máster en Estética Dental por la Universidad de Barcelona. Más de 10 años creando transformaciones armónicas y mínimamente invasivas.
+            </p>
+            <div class="flex items-center justify-between pt-2 border-t border-slate-200 dark:border-slate-700 text-xs">
+              <span class="text-slate-500 dark:text-slate-400 font-medium">Céd. Prof. 7849102</span>
+              <button class="open-booking-btn text-cyan-600 dark:text-cyan-400 font-bold hover:underline" data-service="Diseño de Sonrisa DSD">
+                Agendar con Dra. Sofía
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Specialist 2 -->
+        <div class="group bg-slate-50 dark:bg-slate-800 rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-all duration-300">
+          <div class="relative h-80 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=800&q=80" alt="Dr. Alejandro Morales, Especialista en Ortodoncia Invisible" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+            <div class="absolute bottom-4 left-4 right-4 text-white">
+              <span class="text-[11px] font-bold bg-emerald-600 px-2.5 py-0.5 rounded-full uppercase tracking-wider">Invisalign Platinum</span>
+              <h3 class="font-bold text-xl mt-1">Dr. Alejandro Morales</h3>
+              <p class="text-xs text-slate-300">Ortodoncia Digital & Ortopedia Maxilofacial</p>
+            </div>
+          </div>
+          <div class="p-6 space-y-4">
+            <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+              Certificado Diamond Invisalign con más de 800 casos de alineación invisible completados con éxito en adultos y adolescentes.
+            </p>
+            <div class="flex items-center justify-between pt-2 border-t border-slate-200 dark:border-slate-700 text-xs">
+              <span class="text-slate-500 dark:text-slate-400 font-medium">Céd. Prof. 9102834</span>
+              <button class="open-booking-btn text-cyan-600 dark:text-cyan-400 font-bold hover:underline" data-service="Ortodoncia Invisible">
+                Agendar con Dr. Alejandro
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Specialist 3 -->
+        <div class="group bg-slate-50 dark:bg-slate-800 rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-all duration-300">
+          <div class="relative h-80 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=800&q=80" alt="Dr. Carlos Méndez, Cirujano Maxilofacial e Implantólogo" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+            <div class="absolute bottom-4 left-4 right-4 text-white">
+              <span class="text-[11px] font-bold bg-cyan-700 px-2.5 py-0.5 rounded-full uppercase tracking-wider">Cirugía Guiada 3D</span>
+              <h3 class="font-bold text-xl mt-1">Dr. Carlos Méndez</h3>
+              <p class="text-xs text-slate-300">Cirujano Maxilofacial & Implantología</p>
+            </div>
+          </div>
+          <div class="p-6 space-y-4">
+            <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+              Especialista en implantes zigomáticos, regeneración ósea guiada y extracción de cordales complejas con recuperación rápida.
+            </p>
+            <div class="flex items-center justify-between pt-2 border-t border-slate-200 dark:border-slate-700 text-xs">
+              <span class="text-slate-500 dark:text-slate-400 font-medium">Céd. Prof. 6571982</span>
+              <button class="open-booking-btn text-cyan-600 dark:text-cyan-400 font-bold hover:underline" data-service="Implantes Dentales">
+                Agendar con Dr. Carlos
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS & REVIEWS SECTION -->
+  <section id="testimonios" class="py-20 md:py-28 bg-slate-50 dark:bg-[#0b1120] transition-colors relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="inline-block px-3 py-1 rounded-full bg-cyan-100 text-cyan-800 dark:bg-cyan-950 dark:text-cyan-300 text-xs font-bold uppercase tracking-wider mb-3">
+          Historias de Éxito
+        </span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+          Lo que dicen <span class="gradient-text">nuestros pacientes</span>
+        </h2>
+        <p class="mt-4 text-slate-600 dark:text-slate-300 text-base sm:text-lg">
+          Opiniones reales verificadas de personas que superaron sus temores y hoy sonríen con total libertad.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Review 1 -->
+        <div class="glass-card bg-white dark:bg-slate-800/80 p-8 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-lg relative flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex text-amber-400 text-sm gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <span class="text-[11px] font-bold text-emerald-600 dark:text-emerald-400 flex items-center gap-1">
+                <i class="fa-solid fa-circle-check"></i> Paciente Verificado
+              </span>
+            </div>
+            <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed italic mb-6">
+              "Tenía pánico terrible al dentista desde niña. En DentiArt la anestesia no la sentí para nada, me explicaron todo con la pantalla y el diseño de sonrisa con carillas quedó espectacular. Volví a sonreír en mis fotos de boda."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-100 dark:border-slate-700">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Lucía Méndez" class="w-11 h-11 rounded-full object-cover">
+            <div>
+              <h4 class="font-bold text-sm text-slate-900 dark:text-white">Lucía Méndez</h4>
+              <p class="text-xs text-cyan-600 dark:text-cyan-400 font-semibold">Diseño de Sonrisa E-Max</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="glass-card bg-white dark:bg-slate-800/80 p-8 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-lg relative flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex text-amber-400 text-sm gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <span class="text-[11px] font-bold text-emerald-600 dark:text-emerald-400 flex items-center gap-1">
+                <i class="fa-solid fa-circle-check"></i> Paciente Verificado
+              </span>
+            </div>
+            <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed italic mb-6">
+              "Los alineadores invisibles fueron la mejor decisión para mi trabajo en ventas. Nadie notaba que los traía puestos y en 8 meses mis dientes se alinearon por completo. El trato del Dr. Morales es impecable."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-100 dark:border-slate-700">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Javier Fonseca" class="w-11 h-11 rounded-full object-cover">
+            <div>
+              <h4 class="font-bold text-sm text-slate-900 dark:text-white">Javier Fonseca</h4>
+              <p class="text-xs text-cyan-600 dark:text-cyan-400 font-semibold">Ortodoncia Invisible 3D</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="glass-card bg-white dark:bg-slate-800/80 p-8 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-lg relative flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex text-amber-400 text-sm gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <span class="text-[11px] font-bold text-emerald-600 dark:text-emerald-400 flex items-center gap-1">
+                <i class="fa-solid fa-circle-check"></i> Paciente Verificado
+              </span>
+            </div>
+            <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed italic mb-6">
+              "Perdí una muela hace años y temía ponerme un implante por el dolor. El Dr. Carlos Méndez hizo la cirugía guiada en menos de 30 minutos y al día siguiente comí sin molestias. 100% recomendado."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-100 dark:border-slate-700">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80" alt="Gabriela Rivas" class="w-11 h-11 rounded-full object-cover">
+            <div>
+              <h4 class="font-bold text-sm text-slate-900 dark:text-white">Gabriela Rivas</h4>
+              <p class="text-xs text-cyan-600 dark:text-cyan-400 font-semibold">Implante Dental Guiado</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ SECTION (ACCORDION) -->
+  <section id="faq" class="py-20 md:py-28 bg-white dark:bg-slate-900 transition-colors">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-16">
+        <span class="inline-block px-3 py-1 rounded-full bg-cyan-100 text-cyan-800 dark:bg-cyan-950 dark:text-cyan-300 text-xs font-bold uppercase tracking-wider mb-3">
+          Resuelve tus Dudas
+        </span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+          Preguntas <span class="gradient-text">frecuentes</span>
+        </h2>
+        <p class="mt-4 text-slate-600 dark:text-slate-300 text-sm sm:text-base">
+          Todo lo que necesitas saber antes de tu primera consulta en DentiArt Clinic.
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        
+        <!-- FAQ 1 -->
+        <div class="faq-item active bg-slate-50 dark:bg-slate-800/80 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden transition-all">
+          <button class="faq-header w-full p-6 text-left flex items-center justify-between font-bold text-slate-900 dark:text-white text-base sm:text-lg">
+            <span>¿Los tratamientos como implantes o carillas realmente no duelen?</span>
+            <i class="faq-icon fa-solid fa-chevron-down text-cyan-600 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-answer px-6 pb-6 text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+            Absolutamente no. Empleamos el sistema de anestesia computarizada The Wand®, que administra el anestésico de forma continua a nivel microscópico antes de que la aguja toque el tejido, anulando la sensación de pinchazo. Además, para pacientes muy nerviosos ofrecemos opción de sedación consciente bajo supervisión anestesiológica.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item bg-slate-50 dark:bg-slate-800/80 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden transition-all">
+          <button class="faq-header w-full p-6 text-left flex items-center justify-between font-bold text-slate-900 dark:text-white text-base sm:text-lg">
+            <span>¿Qué incluye la primera cita de valoración?</span>
+            <i class="faq-icon fa-solid fa-chevron-down text-cyan-600 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-answer px-6 pb-6 text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+            Tu primera valoración incluye: revisión clínica integral con cámara intraoral HD, escaneo digital 3D de tus arcadas dentales, diagnóstico con el especialista correspondiente y propuesta de plan de tratamiento personalizado con presupuesto claro y facilidades de pago sin letras pequeñas.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item bg-slate-50 dark:bg-slate-800/80 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden transition-all">
+          <button class="faq-header w-full p-6 text-left flex items-center justify-between font-bold text-slate-900 dark:text-white text-base sm:text-lg">
+            <span>¿Ofrecen planes de financiamiento o meses sin intereses?</span>
+            <i class="faq-icon fa-solid fa-chevron-down text-cyan-600 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-answer px-6 pb-6 text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+            Sí. Aceptamos todas las tarjetas de crédito con promociones de 3, 6, 9 y 12 meses sin intereses. Para tratamientos de ortodoncia e implantes ofrecemos planes de pagos diferidos mensuales durante el transcurso de tu tratamiento sin requerir aprobación bancaria previa.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item bg-slate-50 dark:bg-slate-800/80 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden transition-all">
+          <button class="faq-header w-full p-6 text-left flex items-center justify-between font-bold text-slate-900 dark:text-white text-base sm:text-lg">
+            <span>¿Cuánto duran las carillas de porcelana y los implantes?</span>
+            <i class="faq-icon fa-solid fa-chevron-down text-cyan-600 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-answer px-6 pb-6 text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+            Nuestros implantes de titanio grado médico cuentan con garantía escrita de por vida debido a su total osteointegración. Las carillas de porcelana pura E-Max tienen una vida útil promedio de 15 a 20 años manteniendo su brillo y resistencia original con tus chequeos de limpieza regulares.
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item bg-slate-50 dark:bg-slate-800/80 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden transition-all">
+          <button class="faq-header w-full p-6 text-left flex items-center justify-between font-bold text-slate-900 dark:text-white text-base sm:text-lg">
+            <span>¿Cómo actúan en una urgencia dental de fin de semana?</span>
+            <i class="faq-icon fa-solid fa-chevron-down text-cyan-600 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-answer px-6 pb-6 text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+            Contamos con un doctor de guardia y línea WhatsApp de urgencias activada 24/7. Si sufres un golpe, fractura de diente o dolor severo, te atendemos de inmediato para aliviar la molestia y estabilizar la pieza dental.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- APPOINTMENT BOOKING & LOCATION SECTION -->
+  <section id="contacto" class="py-20 md:py-28 bg-slate-50 dark:bg-[#0b1120] transition-colors relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left: Clinic Info & Map Preview -->
+        <div class="lg:col-span-5 space-y-6">
+          <span class="inline-block px-3 py-1 rounded-full bg-cyan-100 text-cyan-800 dark:bg-cyan-950 dark:text-cyan-300 text-xs font-bold uppercase tracking-wider">
+            Contacto & Ubicación
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white leading-tight">
+            Visítanos en nuestras modernas instalaciones
+          </h2>
+          <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+            Estacionamiento privado gratuito, fácil acceso con elevador y estrictas medidas de confort clínico para ti y tu familia.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <div class="flex items-start gap-4 p-4 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+              <div class="w-10 h-10 rounded-xl bg-cyan-100 dark:bg-cyan-900 text-cyan-600 dark:text-cyan-400 flex items-center justify-center text-lg flex-shrink-0">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-sm text-slate-900 dark:text-white">Dirección</h4>
+                <p class="text-xs text-slate-600 dark:text-slate-300 mt-0.5">Av. Médica Principal #450, Piso 3, Suite 302. Col. Bosques Clínicos.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+              <div class="w-10 h-10 rounded-xl bg-cyan-100 dark:bg-cyan-900 text-cyan-600 dark:text-cyan-400 flex items-center justify-center text-lg flex-shrink-0">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-sm text-slate-900 dark:text-white">Horarios de Atención</h4>
+                <p class="text-xs text-slate-600 dark:text-slate-300 mt-0.5">Lunes a Viernes: 8:00 AM - 8:00 PM</p>
+                <p class="text-xs text-slate-600 dark:text-slate-300">Sábados: 9:00 AM - 3:00 PM | Urgencias: 24/7</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+              <div class="w-10 h-10 rounded-xl bg-emerald-100 dark:bg-emerald-900 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-lg flex-shrink-0">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-sm text-slate-900 dark:text-white">Teléfonos Directos</h4>
+                <p class="text-xs text-slate-600 dark:text-slate-300 mt-0.5">Línea Citas: <a href="tel:+525512345678" class="text-cyan-600 font-bold hover:underline">(55) 1234-5678</a></p>
+                <p class="text-xs text-slate-600 dark:text-slate-300">WhatsApp Oficial: <a href="https://wa.me/5215512345678" class="text-emerald-600 font-bold hover:underline">+52 (55) 1234-5678</a></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Direct GPS Buttons -->
+          <div class="flex gap-3 pt-2">
+            <a href="https://maps.google.com" target="_blank" rel="noopener" class="flex-1 py-2.5 px-4 rounded-xl bg-slate-200 hover:bg-slate-300 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-800 dark:text-white text-xs font-bold flex items-center justify-center gap-2 transition-colors">
+              <i class="fa-solid fa-map"></i> Google Maps
+            </a>
+            <a href="https://waze.com" target="_blank" rel="noopener" class="flex-1 py-2.5 px-4 rounded-xl bg-slate-200 hover:bg-slate-300 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-800 dark:text-white text-xs font-bold flex items-center justify-center gap-2 transition-colors">
+              <i class="fa-brands fa-waze"></i> Abrir en Waze
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Right: Interactive Booking Form -->
+        <div class="lg:col-span-7">
+          <div class="glass-card bg-white dark:bg-slate-800 p-8 sm:p-10 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-2xl relative">
+            <div class="mb-6">
+              <span class="text-xs font-bold text-cyan-600 dark:text-cyan-400 uppercase tracking-wider">Cita de Valoración</span>
+              <h3 class="text-2xl font-bold text-slate-900 dark:text-white">Agenda tu consulta médica</h3>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Completa los datos y recibirás confirmación inmediata.</p>
+            </div>
+
+            <form id="appointment-form" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="book-name" class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">Nombre Completo *</label>
+                  <input type="text" id="book-name" required placeholder="Ej. Carlos Navarro" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-white text-sm focus:ring-2 focus:ring-cyan-500 focus:outline-none">
+                </div>
+                <div>
+                  <label for="book-phone" class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">WhatsApp / Teléfono *</label>
+                  <input type="tel" id="book-phone" required placeholder="Ej. 55 1234 5678" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-white text-sm focus:ring-2 focus:ring-cyan-500 focus:outline-none">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="booking-service" class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">Tratamiento de Interés *</label>
+                  <select id="booking-service" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-white text-sm focus:ring-2 focus:ring-cyan-500 focus:outline-none">
+                    <option value="Diseño Digital de Sonrisa (DSD)">Diseño de Sonrisa & Carillas</option>
+                    <option value="Ortodoncia Invisible">Ortodoncia Invisible (Alineadores)</option>
+                    <option value="Implantes Dentales 3D">Implantes Dentales Guiados</option>
+                    <option value="Blanqueamiento Láser">Blanqueamiento Láser Express</option>
+                    <option value="Limpieza Dental Ultrasónica">Limpieza Dental & Profilaxis</option>
+                    <option value="Endodoncia sin Dolor">Endodoncia Microscópica</option>
+                    <option value="Odontopediatría">Odontología para Niños</option>
+                    <option value="Urgencia Dental Inmediata">Urgencia / Dolor Agudo</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="book-shift" class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">Horario Preferido *</label>
+                  <select id="book-shift" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-white text-sm focus:ring-2 focus:ring-cyan-500 focus:outline-none">
+                    <option value="Mañana (9:00 AM - 1:00 PM)">Mañana (9:00 AM - 1:00 PM)</option>
+                    <option value="Tarde (2:00 PM - 5:00 PM)">Tarde (2:00 PM - 5:00 PM)</option>
+                    <option value="Noche (5:00 PM - 8:00 PM)">Noche (5:00 PM - 8:00 PM)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label for="book-date" class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">Fecha Sugerida</label>
+                <input type="date" id="book-date" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-white text-sm focus:ring-2 focus:ring-cyan-500 focus:outline-none">
+              </div>
+
+              <div>
+                <label for="book-notes" class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">Comentarios o síntomas (opcional)</label>
+                <textarea id="book-notes" rows="2" placeholder="Cuéntanos si tienes alguna duda, molestia específica o preferencia de doctor..." class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-white text-sm focus:ring-2 focus:ring-cyan-500 focus:outline-none"></textarea>
+              </div>
+
+              <div class="pt-2">
+                <button type="submit" class="w-full py-4 bg-gradient-to-r from-cyan-600 via-primary-500 to-emerald-500 hover:from-cyan-700 hover:to-emerald-600 text-white font-bold rounded-xl shadow-lg shadow-cyan-500/25 flex items-center justify-center gap-2 transition-all">
+                  <i class="fa-regular fa-paper-plane"></i>
+                  <span>Confirmar Solicitud de Cita</span>
+                </button>
+                <p class="text-[11px] text-center text-slate-500 dark:text-slate-400 mt-2">
+                  🔒 Tus datos están protegidos bajo estricto secreto médico profesional.
+                </p>
+              </div>
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 text-slate-400 text-xs py-16 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+        
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-2">
+            <div class="w-9 h-9 rounded-xl bg-cyan-600 flex items-center justify-center text-white text-lg">
+              <i class="fa-solid fa-tooth"></i>
+            </div>
+            <span class="text-xl font-bold font-heading text-white">Denti<span class="text-cyan-400">Art</span> Clinic</span>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+            Centro odontológico de alta especialidad enfocado en odontología estética, ortodoncia digital e implantes computarizados sin dolor.
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" class="w-9 h-9 rounded-lg bg-slate-900 hover:bg-cyan-600 text-slate-300 hover:text-white flex items-center justify-center transition-colors">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" class="w-9 h-9 rounded-lg bg-slate-900 hover:bg-pink-600 text-slate-300 hover:text-white flex items-center justify-center transition-colors">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok" class="w-9 h-9 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-white flex items-center justify-center transition-colors">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="https://wa.me/5215512345678" target="_blank" rel="noopener" aria-label="WhatsApp" class="w-9 h-9 rounded-lg bg-slate-900 hover:bg-emerald-600 text-slate-300 hover:text-white flex items-center justify-center transition-colors">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm mb-4">Tratamientos</h4>
+          <ul class="space-y-2.5">
+            <li><a href="#servicios" class="hover:text-cyan-400 transition-colors">Diseño de Sonrisa DSD</a></li>
+            <li><a href="#servicios" class="hover:text-cyan-400 transition-colors">Ortodoncia Invisible</a></li>
+            <li><a href="#servicios" class="hover:text-cyan-400 transition-colors">Implantes Dentales 3D</a></li>
+            <li><a href="#servicios" class="hover:text-cyan-400 transition-colors">Blanqueamiento Láser</a></li>
+            <li><a href="#servicios" class="hover:text-cyan-400 transition-colors">Endodoncia Microscópica</a></li>
+            <li><a href="#servicios" class="hover:text-cyan-400 transition-colors">Odontopediatría</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm mb-4">La Clínica</h4>
+          <ul class="space-y-2.5">
+            <li><a href="#hero" class="hover:text-cyan-400 transition-colors">Filosofía Confort</a></li>
+            <li><a href="#transformaciones" class="hover:text-cyan-400 transition-colors">Casos Antes / Después</a></li>
+            <li><a href="#especialistas" class="hover:text-cyan-400 transition-colors">Nuestros Doctores</a></li>
+            <li><a href="#testimonios" class="hover:text-cyan-400 transition-colors">Opiniones Google</a></li>
+            <li><a href="#faq" class="hover:text-cyan-400 transition-colors">Preguntas Frecuentes</a></li>
+            <li><a href="#contacto" class="hover:text-cyan-400 transition-colors">Ubicación y Mapa</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm mb-4">Certificaciones</h4>
+          <p class="text-[11px] text-slate-400 mb-3">Instalaciones avaladas con estándares internacionales de bioseguridad y esterilización.</p>
+          <div class="inline-flex items-center gap-2 bg-slate-900 border border-slate-800 px-3 py-2 rounded-xl text-[11px] text-cyan-300">
+            <i class="fa-solid fa-award text-cyan-400 text-sm"></i> Certificación ISO Médica
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px]">
+        <p>© 2026 DentiArt Clinic. Todos los derechos reservados. Diseñado para verse increíble en cualquier dispositivo móvil, tablet y escritorio.</p>
+        <div class="flex items-center gap-4 text-slate-500">
+          <a href="#" class="hover:text-slate-300">Aviso de Privacidad</a>
+          <span>•</span>
+          <a href="#" class="hover:text-slate-300">Términos del Servicio</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP & EMERGENCY BUTTON -->
+  <aside aria-label="Acciones flotantes" class="fixed bottom-6 right-6 z-40 flex flex-col items-end gap-3">
+    
+    <!-- Back To Top Button -->
+    <button id="back-to-top" aria-label="Volver arriba" class="w-11 h-11 rounded-full bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 shadow-xl border border-slate-200 dark:border-slate-700 flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 hover:scale-110">
+      <i class="fa-solid fa-arrow-up text-sm"></i>
+    </button>
+
+    <!-- Pulsating WhatsApp Button -->
+    <a href="https://wa.me/5215512345678?text=Hola%20DentiArt%20Clinic%2C%20quisiera%20agendar%20una%20cita%20o%20hacer%20una%20consulta" target="_blank" rel="noopener" aria-label="Chatear por WhatsApp" class="whatsapp-pulse group relative flex items-center justify-center w-14 h-14 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full shadow-2xl transition-all duration-300 hover:scale-110">
+      <i class="fa-brands fa-whatsapp text-3xl"></i>
+      
+      <!-- Notification Badge -->
+      <span class="absolute -top-1 -right-1 w-5 h-5 bg-rose-500 text-white text-[10px] font-bold rounded-full flex items-center justify-center border-2 border-white dark:border-slate-900 animate-bounce">
+        1
+      </span>
+
+      <!-- Tooltip on hover -->
+      <span class="absolute right-16 bg-slate-900 text-white text-xs font-semibold px-3 py-1.5 rounded-xl shadow-lg opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity whitespace-nowrap">
+        ¿Dudas o citas? Escríbenos aquí 👋
+      </span>
+    </a>
+
+  </aside>
+
+  <!-- MODAL: APPOINTMENT SCHEDULER -->
+  <div id="booking-modal" class="modal-overlay fixed inset-0 bg-slate-950/70 backdrop-blur-md z-50 flex items-center justify-center p-4">
+    <div class="modal-content bg-white dark:bg-slate-900 rounded-3xl shadow-2xl max-w-lg w-full p-6 sm:p-8 border border-slate-200 dark:border-slate-800 relative max-h-[90vh] overflow-y-auto">
+      
+      <button id="close-booking-modal" aria-label="Cerrar modal" class="absolute top-5 right-5 w-9 h-9 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 hover:text-slate-900 dark:hover:text-white flex items-center justify-center">
+        <i class="fa-solid fa-xmark text-lg"></i>
+      </button>
+
+      <div class="mb-6">
+        <div class="w-12 h-12 rounded-2xl bg-cyan-100 dark:bg-cyan-950 text-cyan-600 dark:text-cyan-400 flex items-center justify-center text-xl mb-3">
+          <i class="fa-regular fa-calendar-check"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-slate-900 dark:text-white">Agenda tu Valoración</h3>
+        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Elige tu especialidad y te confirmaremos en menos de 10 minutos.</p>
+      </div>
+
+      <!-- Quick Modal Form duplicate linking to action -->
+      <form onsubmit="document.getElementById('appointment-form').dispatchEvent(new Event('submit')); return false;" class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">Nombre Completo *</label>
+          <input type="text" oninput="document.getElementById('book-name').value = this.value" required placeholder="Tu nombre" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white text-sm focus:ring-2 focus:ring-cyan-500 focus:outline-none">
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">WhatsApp / Teléfono *</label>
+          <input type="tel" oninput="document.getElementById('book-phone').value = this.value" required placeholder="55 1234 5678" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white text-sm focus:ring-2 focus:ring-cyan-500 focus:outline-none">
+        </div>
+
+        <div>
+          <button type="submit" class="w-full py-3.5 bg-gradient-to-r from-cyan-600 to-emerald-500 hover:from-cyan-700 hover:to-emerald-600 text-white font-bold rounded-xl shadow-lg shadow-cyan-500/25 flex items-center justify-center gap-2">
+            <i class="fa-brands fa-whatsapp text-lg"></i> Enviar Solicitud por WhatsApp
+          </button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+  <!-- MODAL: SERVICE CLINICAL DETAILS -->
+  <div id="service-modal" class="modal-overlay fixed inset-0 bg-slate-950/70 backdrop-blur-md z-50 flex items-center justify-center p-4">
+    <div class="modal-content bg-white dark:bg-slate-900 rounded-3xl shadow-2xl max-w-xl w-full p-6 sm:p-8 border border-slate-200 dark:border-slate-800 relative max-h-[90vh] overflow-y-auto">
+      
+      <button id="close-service-modal" aria-label="Cerrar modal" class="absolute top-5 right-5 w-9 h-9 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 hover:text-slate-900 dark:hover:text-white flex items-center justify-center">
+        <i class="fa-solid fa-xmark text-lg"></i>
+      </button>
+
+      <div>
+        <span class="inline-block px-3 py-1 rounded-full bg-cyan-100 text-cyan-800 dark:bg-cyan-950 dark:text-cyan-300 text-[11px] font-bold uppercase tracking-wider mb-2">Ficha Técnica del Procedimiento</span>
+        <h3 id="srv-modal-title" class="text-2xl font-extrabold text-slate-900 dark:text-white">Detalle del Tratamiento</h3>
+        <p id="srv-modal-sub" class="text-xs text-cyan-600 dark:text-cyan-400 font-semibold mt-1">Odontología Digital de Alta Especialidad</p>
+
+        <p id="srv-modal-desc" class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mt-4">
+          Descripción del tratamiento...
+        </p>
+
+        <div class="my-5 p-4 rounded-2xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-800 dark:text-slate-200 mb-3">Beneficios Clínicos Destacados</h4>
+          <ul id="srv-modal-benefits" class="space-y-2 text-xs">
+            <!-- Dynamically populated -->
+          </ul>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4 text-xs pt-1 mb-6">
+          <div class="p-3 rounded-xl bg-cyan-50 dark:bg-slate-800 border border-cyan-100 dark:border-slate-700">
+            <span class="text-slate-400 block font-medium">Duración promedio:</span>
+            <span id="srv-modal-duration" class="font-bold text-slate-800 dark:text-white text-sm">2 citas</span>
+          </div>
+          <div class="p-3 rounded-xl bg-cyan-50 dark:bg-slate-800 border border-cyan-100 dark:border-slate-700">
+            <span class="text-slate-400 block font-medium">Garantía clínica:</span>
+            <span id="srv-modal-warranty" class="font-bold text-emerald-600 dark:text-emerald-400 text-sm">10 años</span>
+          </div>
+        </div>
+
+        <button id="srv-modal-book-btn" class="w-full py-3.5 bg-cyan-600 hover:bg-cyan-700 text-white font-bold rounded-xl shadow-lg transition-colors flex items-center justify-center gap-2">
+          <i class="fa-regular fa-calendar-check"></i> Agendar este Procedimiento
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- MODAL: SUCCESS CONFIRMATION -->
+  <div id="success-modal" class="modal-overlay fixed inset-0 bg-slate-950/70 backdrop-blur-md z-50 flex items-center justify-center p-4">
+    <div class="modal-content bg-white dark:bg-slate-900 rounded-3xl shadow-2xl max-w-md w-full p-8 border border-slate-200 dark:border-slate-800 text-center relative">
+      <div class="w-16 h-16 rounded-full bg-emerald-100 dark:bg-emerald-950 text-emerald-500 flex items-center justify-center text-3xl mx-auto mb-4 animate-bounce">
+        <i class="fa-solid fa-check"></i>
+      </div>
+      <h3 class="text-2xl font-bold text-slate-900 dark:text-white">¡Solicitud Registrada!</h3>
+      <p class="text-slate-600 dark:text-slate-300 text-sm mt-2">
+        Hemos reservado tu turno provisionalmente con el código de referencia:
+      </p>
+      <div class="my-4 p-3 bg-slate-100 dark:bg-slate-800 rounded-xl font-mono text-cyan-600 dark:text-cyan-400 font-extrabold text-lg">
+        <span id="success-booking-code">DEN-84920</span>
+      </div>
+      <p class="text-xs text-slate-500 mb-6">
+        Haz clic a continuación para enviar tu confirmación inmediata a nuestro WhatsApp de atención y asegurar tu horario preferido.
+      </p>
+      <div class="space-y-3">
+        <a id="success-wa-send-btn" href="#" target="_blank" rel="noopener" class="w-full py-3.5 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-xl shadow-lg flex items-center justify-center gap-2 transition-colors">
+          <i class="fa-brands fa-whatsapp text-xl"></i> Abrir WhatsApp y Confirmar
+        </a>
+        <button id="close-success-modal" class="w-full py-2.5 text-slate-500 hover:text-slate-800 dark:hover:text-white text-xs font-semibold">
+          Cerrar ventana
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Core -->
+  <script src="js/app.js"></script>
+</body>
+</html>
